@@ -349,7 +349,17 @@
         });
 
         const data = await res.json();
-        aiBox.innerText = data.text;
+        aiBox.innerText = `
+${data.step1}
+
+${data.step2}
+
+${data.step3}
+${data.step4}
+${data.step5}
+${data.step6}
+`;
+
       } catch (err) {
         aiBox.innerText = "Failed to generate insights.";
       }
