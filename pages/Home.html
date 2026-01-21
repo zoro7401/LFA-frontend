@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>TECHVERSE LFA BUILDER</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="../js/toggletheme.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              DEFAULT: "#0f172a",
+              light: "#1e293b",
+              hover: "#334155",
+            },
+            primary: "#0f172a",
+            secondary: "#3b82f6",
+            surface: "#ffffff",
+            "background-light": "#f8fafc",
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+          },
+          backgroundImage: {
+            'dot-pattern': 'radial-gradient(#cbd5e1 1px, transparent 1px)',
+            'dot-pattern-dark': 'radial-gradient(#334155 1px, transparent 1px)',
+          }
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .bg-dots {
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-background-light dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen transition-colors duration-300">
+  <main
+    class="relative min-h-screen bg-background-light dark:bg-slate-950 bg-dots bg-dot-pattern dark:bg-dot-pattern-dark">
+    <div class="fixed top-6 right-8 z-30">
+      <button
+        class="w-10 h-10 flex items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm rounded-full text-slate-600 dark:text-slate-400 hover:text-navy dark:hover:text-white transition-all"
+        onclick="toggleTheme()">
+        <span class="material-symbols-outlined text-[20px] block dark:hidden">dark_mode</span>
+        <span class="material-symbols-outlined text-[20px] hidden dark:block">light_mode</span>
+      </button>
+    </div>
+    <div class="max-w-6xl mx-auto px-8 py-24 flex flex-col">
+      <div class="mb-24">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight text-navy dark:text-white leading-[1.1]">
+          TECHVERSE<br />
+          <span class="text-slate-500 dark:text-slate-400">LFA BUILDER</span>
+        </h1>
+        <p class="text-xl text-slate-600 dark:text-slate-300 mb-12 max-w-2xl leading-relaxed">
+          A unified platform to design your education programs. Structure your Logical Framework Approach in minutes
+          with professional templates and AI-assisted tools.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="Step_1.html">
+            <button
+              class="group relative px-8 py-5 bg-gradient-to-r from-navy to-blue-900 dark:from-blue-600 dark:to-blue-500 text-white rounded-2xl shadow-2xl hover:shadow-blue-500/50 dark:hover:shadow-blue-500/50 transition-all duration-300 flex items-center gap-3 font-bold text-lg overflow-hidden hover:scale-105 active:scale-95">
+              <span
+                class="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <span class="material-symbols-outlined text-[26px] relative z-10">add</span>
+              <span class="relative z-10">Start New LFA</span>
+              <span
+                class="material-symbols-outlined text-[20px] relative z-10 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="mb-32">
+        <div class="flex items-center gap-4 mb-12">
+          <span class="material-symbols-outlined text-blue-600 dark:text-blue-400 text-3xl">explore</span>
+          <h2 class="text-sm font-black text-slate-800 dark:text-slate-200 uppercase tracking-widest">How It Works</h2>
+          <div
+            class="h-px flex-1 bg-gradient-to-r from-slate-200 via-slate-300 to-transparent dark:from-slate-800 dark:via-slate-700 dark:to-transparent">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+
+          <div
+            class="feature-card bg-white dark:bg-slate-900 p-10 rounded-3xl shadow-xl border-2 border-slate-100 dark:border-slate-800 hover:border-blue-200 dark:hover:border-blue-800 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 group">
+            <div
+              class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 dark:from-blue-400 dark:to-blue-600 text-white flex items-center justify-center font-black text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform">
+              1
+            </div>
+            <h3 class="font-black text-navy dark:text-white mb-4 text-xl">Define Problem</h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Identify core issues and analyze the root
+              causes using our intuitive problem tree tool.</p>
+          </div>
+
+          <div
+            class="feature-card bg-white dark:bg-slate-900 p-10 rounded-3xl shadow-xl border-2 border-slate-100 dark:border-slate-800 hover:border-blue-200 dark:hover:border-blue-800 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 group">
+            <div
+              class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-700 dark:from-purple-400 dark:to-purple-600 text-white flex items-center justify-center font-black text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform">
+              2
+            </div>
+            <h3 class="font-black text-navy dark:text-white mb-4 text-xl">Define Change</h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Map out stakeholders, objectives, and the
+              desired change hierarchy with precision.</p>
+          </div>
+
+          <div
+            class="feature-card bg-white dark:bg-slate-900 p-10 rounded-3xl shadow-xl border-2 border-slate-100 dark:border-slate-800 hover:border-blue-200 dark:hover:border-blue-800 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 group">
+            <div
+              class="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-green-700 dark:from-green-400 dark:to-green-600 text-white flex items-center justify-center font-black text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform">
+              3
+            </div>
+            <h3 class="font-black text-navy dark:text-white mb-4 text-xl">Review Summary</h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Generate your framework matrix and export
+              directly to professional PDF documents.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mb-32">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-black text-navy dark:text-white mb-4">Powerful Features</h2>
+          <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Everything you need to create
+            professional Logical Framework Approaches</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="feature-card flex flex-col gap-6 p-10 rounded-3xl bg-gradient-to-br from-blue-50 to-white dark:from-slate-900 dark:to-slate-800 border-2 border-blue-100 dark:border-slate-700 shadow-lg hover:shadow-2xl transition-all hover:scale-105">
+            <div
+              class="w-16 h-16 rounded-2xl bg-gradient-to-br from-navy to-blue-900 dark:from-blue-600 dark:to-blue-400 flex items-center justify-center shadow-xl">
+              <span class="material-symbols-outlined text-white text-3xl">architecture</span>
+            </div>
+            <div>
+              <h3 class="font-black text-navy dark:text-white mb-3 text-xl">Structured Design</h3>
+              <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Built on industry-standard Logical Framework
+                Approach methodology for robust planning.</p>
+            </div>
+          </div>
+
+          <div
+            class="feature-card flex flex-col gap-6 p-10 rounded-3xl bg-gradient-to-br from-pink-50 to-white dark:from-slate-900 dark:to-slate-800 border-2 border-pink-100 dark:border-slate-700 shadow-lg hover:shadow-2xl transition-all hover:scale-105">
+            <div
+              class="w-16 h-16 rounded-2xl bg-gradient-to-br from-pink-600 to-pink-400 flex items-center justify-center shadow-xl">
+              <span class="material-symbols-outlined text-white text-3xl">groups</span>
+            </div>
+            <div>
+              <h3 class="font-black text-navy dark:text-white mb-3 text-xl">Stakeholder-Centric</h3>
+              <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Map teachers, students, and administrators
+                directly to your intervention goals seamlessly.</p>
+            </div>
+          </div>
+
+          <div
+            class="feature-card flex flex-col gap-6 p-10 rounded-3xl bg-gradient-to-br from-green-50 to-white dark:from-slate-900 dark:to-slate-800 border-2 border-green-100 dark:border-slate-700 shadow-lg hover:shadow-2xl transition-all hover:scale-105">
+            <div
+              class="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-600 to-green-400 flex items-center justify-center shadow-xl">
+              <span class="material-symbols-outlined text-white text-3xl">picture_as_pdf</span>
+            </div>
+            <div>
+              <h3 class="font-black text-navy dark:text-white mb-3 text-xl">Ready to Deploy</h3>
+              <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Export your complete LFA to PDF format for
+                immediate sharing and implementation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="mt-32 pt-12 border-t border-slate-200 dark:border-slate-800">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 pb-12">
+          <div class="text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-widest">
+            Version 1.0.1
+          </div>
+          <div class="text-xs text-slate-400 dark:text-slate-500 text-center md:text-right font-medium">
+            © 2026 TechVerse Builders. All Rights Reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+</body>
+
+</html>
